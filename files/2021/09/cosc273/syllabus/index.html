@@ -31,6 +31,8 @@
 
       h5 {
         margin-top: 1.5em;
+        font-variant: small-caps;
+        font-weight: bold;
       }
 
       .quiz {
@@ -54,7 +56,7 @@
       }
       
       #grades {
-        width: 50%;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
       }
@@ -89,7 +91,7 @@
         </div>
         <div class="list-group-item">
           <h4 class="list-group-item-heading">Class sessions</h4>
-          <p class="list-group-item-text">TR 9:30&ndash;10:50 A.M. in Olin 201</p>
+          <p class="list-group-item-text">TR 9:30&ndash;10:50 A.M. in Olin 103</p>
         </div>
         <div class="list-group-item">
           <h4 class="list-group-item-heading">Office hours</h4>
@@ -122,7 +124,7 @@
           <div id="headingTwo" class="panel-collapse collapse" role="tabpanel"
             aria-labelledby="headingTwo">
             <div class="panel-body">
-              <div class="well">
+              <blockquote>
                 <p>
                   An introduction to computer organization and principles of computer design. Topics
                   include digital logic
@@ -132,30 +134,31 @@
                   Prerequisite: "C" or better
                   in Computer Science 235.
                 </p>
-              </div>
+              </blockquote>
 
-              <p> We will study digital logic, Von Neumann architecture, data representations, the
+              <p>
+                We will study digital logic, Von Neumann architecture, data representations, the
                 fetch/execute cycle, instruction formats and addressing, machine and assembly
-                language, memory structure, interrupts, and input/output.</p>
+                language, memory structure, interrupts, and input/output.
+              </p>
 
               <!--
-          <div class="panel panel-primary">
+              <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Goals</h3>
             </div>
             <div class="panel-body">
--->
+            -->
 
-              <p>By the end of the course, you should be able to answer these questions:</p>
+              <!-- <p>By the end of the course, you should be able to answer these questions:</p>
 
               <ul>
                 <li>What are the logical parts of a computer and what is the purpose of each part?
                 </li>
-                <!-- <li>How does a computer actually work inside?</li> -->
                 <li>How can we get electrical circuits to perform tasks such as adding, multiplying,
                   and comparing numbers?</li>
-                <li>How do programming languages and computer hardware to work together?</li>
-              </ul>
+                <li>How do programming languages and computer hardware work together?</li>
+              </ul> -->
               <p>By the end of this course, you should be able to:</p>
               <ul>
                 <li>Construct digital logic circuits to implement a variety of operations and chips
@@ -166,12 +169,13 @@
                   integer values, real number values, character values, and bit strings.</li>
                 <li>Know what an <em>assembler</em> does and write programs in <em>assembly
                     language</em>.</li>
-                <li>Be able to use <a
+                <li>Use <a
                     href="https://en.wikipedia.org/wiki/Bit_manipulation#Terminology"
                     target="_blank"><em>bit twiddling</em></a> to implement algorithms.</li>
                 <li>Identify the major components of a computer and explain what each does.</li>
-                <li>Understand the roles of high-level programming languages and an operating
+                <li>Understand the roles of high-level programming languages and operating
                   systems in computer systems.</li>
+                <li>Explain how a function call semantics are implemented on a computer.</li>
                 <li>Explain why interrupts are useful and how a CPU handles them.</li>
               </ul>
 
@@ -199,10 +203,6 @@
             <div class="panel-body">
 
               <h5>Required textbooks</h5>
-
-              <p>
-                We will use two textbooks:
-              </p>
 
               <ol>
                 <li>
@@ -234,7 +234,7 @@
             </li>
 -->
                 <li>
-                  <a href="https://class.mimir.io/" target="_blank">Mimir Classroom</a>.
+                  <a href="https://www.mimirhq.com/" target="_blank">Mimir Classroom</a>.
                   You will need to create an account (free) <strong>using your Wofford email
                     address</strong>.
                   Homework exercises and some projects will be administered from within Mimir
@@ -339,8 +339,6 @@
                 A final average will be calculated using two methods using weightings shown in the
                 table.
                 The higher of the two values will be mapped to a letter grade.
-                Under Method #2, the homework scores are not factored into the
-                calculation, the test scores are weighted less, and the final exam is weighted more.
                 Note: The Moodle Gradebook will reflect Method #1 weightings.
               </p>
 
@@ -351,31 +349,29 @@
 -->
 
 
-              <table id="grades" class="table table-striped table-bordered">
+              <table id="grades" class="table table-striped table-bordered table-hover">
                 <thead>
                   <tr style="border-bottom-width: 0;">
-                    <th rowspan="2" style="vertical-align: middle;text-align: center;">Component
+                    <th style="vertical-align :middle; text-align:center; width: 25%">
+                      Component
                     </th>
-
-                    <th colspan="2" style="text-align:center;">Weight</th>
-                  </tr>
-                  <tr style="border-top-width: 0;">
-                    <th style="text-align: center;">Method #1</th>
-                    <th style="text-align: center;">Method #2</th>
+                    <th style="text-align:center; width: 37.5%">Weighting #1</th>
+                    <th style="text-align:center; width: 37.5%">Weighting #2</th>
                   </tr>
                 </thead>
+
 
                 <tbody>
                   <tr>
                     <td>Homework</td>
                     <td class="text-right">25%</td>
-                    <td class="text-right">0%</td>
+                    <td class="text-right">10%</td>
                   </tr>
 
                   <tr>
                     <td>Projects</td>
-                    <td class="text-right">30%</td>
-                    <td class="text-right">30%</td>
+                    <td class="text-right">35%</td>
+                    <td class="text-right">35%</td>
                   </tr>
 
                   <tr>
@@ -388,8 +384,8 @@
                   <tr>
                     <td>Final exam</td>
 
-                    <td class="text-right">20%</td>
-                    <td class="text-right">55%</td>
+                    <td class="text-right">10%</td>
+                    <td class="text-right">40%</td>
                   </tr>
                 </tbody>
 
@@ -450,8 +446,8 @@
               <h5>Projects</h5>
 
               <p>
-                Projects play a central role in this course and comprise 30% of your final grade.
-                It is important to complete each project successfully, working on your own.
+                Projects play a central role in this course and comprise 35% of your final grade.
+                It is important to complete each project successfully and working on your own.
               </p>
 
 
@@ -461,7 +457,7 @@
               <p>
                 The final exam is comprehensive, covering the material on the first and second tests
                 as well as material covered after the second test.
-                The objective of the final exam is to assess how well you reached the objectives for
+                The objective of the final exam is to assess how well you achieved the objectives for
                 the course.
               </p>
               <p>
@@ -521,7 +517,7 @@
                       the more likely you are to remember information well.
                     </p>
                   <div>
-                    Source: <a href="https://www.studyright.net/blog/handwritten-notes/">Handwritten notes vs. typed notes: is there a difference?</a>
+                    Source: <a href="https://www.studyright.net/blog/handwritten-notes/" target="_blank">Handwritten notes vs. typed notes: is there a difference?</a>
                   </div>
                 </blockquote>
 
@@ -547,7 +543,7 @@
 
                   <p>
                     Do not attend class if you are not feeling well and might have a contagious illness.
-                    Seek appropriate medical attention at the Wellness Center.
+                    Seek medical attention at the Wellness Center.
                     A doctor's note concerning absences is not required.
                   </p>
 
@@ -593,11 +589,12 @@
                   </p>
                   <p>
                     You must meet homework and project deadlines.
-                    To submit your work late, you must contact me <strong>at least 18 hours before the
+                    To submit your work late, you must contact me <strong>no later than 2:00 P.M the day before the
                     deadline to request an extension.
                     Your request must indicate how much more time you need.
                     I will still expect you to submit by the deadline the work you have completed
                     so far even if you are given an extension.
+                    If you do not hear back from me, assume you have an extension.
                     </strong>
                   </p>
 
@@ -610,19 +607,15 @@
                   <h3 class="panel-title">Communication</h3>
                 </div>
                 <div class="panel-body">
-                  <p>
-                    Post questions and comments about this course at Piazza.
-                    Feel free to respond to a question or
-                    to edit a response to a question.
-                    We are all learning together.
-                  </p>
+                  <h5>Piazza</h5>
+
                   <p>
                     All questions about coursework, including about projects, must be posted at the
                     Piazza Q&amp;A page.
                     If you send me a question via email or via private post that should be posted
                     publicly at Piazza,
-                    my reply will direct you to post your question publicly.
-                    After you post it publicly, I will reply.
+                    I will direct you to post your question publicly.
+                    After you post it publicly, I will reply to the question.
                   </p>
                   <p>
                     <strong>Do not post working code at Piazza.</strong>
@@ -630,24 +623,27 @@
                     description of how to change code to get it to work.
                     It is acceptable to post non-working code.
                   </p>
-
-
                   <p>
-                    I usually respond to email messages sent Sunday through Thursday within 24
-                    hours&mdash;longer
-                    when sent on a Friday or a Saturday.
-                    I usually respond much sooner to Piazza posts since I have the <a
-                      href="https://piazza.com/product/mobile" target="_blank">Piazza app</a> on my
-                    phone and receive notifications.
+                    Feel free to respond to a question or
+                    to edit a response to a question.
+                    We are all learning together.
                   </p>
+                  <p>
+                    Note: <em>Anonymous</em> Piazza posts are anonymous to classmates but not to me.
+                  </p>
+
+                  <h5>Email</h5>
+
                   <p>
                     It is appropriate to send me email messages for private matters, such as letting me know you
                     will be absent or that you&rsquo;d like to schedule a meeting.
-                    A better stategy is to post a private message via Piazza.
                   </p>
-
                   <p>
-                    Note: Anonymous Piazza posts are anonymous to classmates but not to me.
+                    I usually respond to email messages sent Sunday through Thursday within 24
+                    hours and within 48 hours when sent on a Friday or a Saturday.
+                    I usually respond much sooner to Piazza posts since I have the <a
+                      href="https://piazza.com/product/mobile" target="_blank">Piazza app</a> on my
+                    phone and receive notifications.
                   </p>
                 </div>
               </div>
@@ -671,23 +667,24 @@
                     get help from others on projects.
                     However, you may not write code for another student or provide code to copy.
                     Conversely, you may not get code from another student. 
-                    Doing any of these things is a violation Honor Code.
+                    Doing any of these things is a violation of the Honor Code.
                   </p>
                   <p>
-                    <em>There is a distinction between <em>collaboration</em> and
+                    <em>There is a distinction between <em>collaborating</em> and
                       <em>cheating</em>.</em>
                   </p>
                   <p>
-                    During <em>collaboration</em>,
+                    When <em>collaborating</em>,
                   </p>
                   <ul>
                     <li>One person may discuss a problem or algorithm with another person.</li>
                     <li>One person may work with another person to figure out how to attack a problem.</li>
                     <li>One person may describe a problem and get suggestions for solving it.</li>
                     <li>One person may describe to another person what some code must do, but not provide that code.</li>
+                    <li>One person may help another person to debug code, but must not type the working code.</li>
                   </ul>
                   <p>
-                    Ultimately, you must implement a solution to the problem yourself.
+                    Ultimately, <em>you</em> must implement a solution to the problem yourself.
                   </p>
                   <p>On the other hand, <em>cheating</em> occurs when</p>
                   <ul>
@@ -706,7 +703,7 @@
                     </li>
                     -->
                     <li>
-                      One person edits another person&rsquo;s code.
+                      One person edits another person&rsquo;s code, either to write new code or fix a bug in existing code.
                     </li>
                     <li>
                       Two people are working along with another and decide together
@@ -730,13 +727,12 @@
                   </p>
                   <ul>
                     <li>
-                      Seek help from me, either by posting at Piazza or meeting with me.
+                      Seek help from me.
                     </li>
                     <li>
                       Submit on time the work you have done, even if it is not fully completed.
                       You will likely get partial credit for your work.
-                      Just make sure any code you submit contains no errors that prevent it from
-                      being executed.
+
                     </li>
                   </ul>
 

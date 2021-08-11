@@ -5,12 +5,42 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Mon, 28 Dec 2020 11:05:50 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Tue, 03 Aug 2021 18:38:39 -0400</lastBuildDate>
     <image>
-      <url>/images/icon_hu4d3c67660b7aa92f74bf4db7caa82d2e_46007_512x512_fill_lanczos_center_2.png</url>
+      <url>/images/icon_hu4d3c67660b7aa92f74bf4db7caa82d2e_46007_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2021-09/cosc235/</link>
+      <pubDate>Tue, 03 Aug 2021 18:38:39 -0400</pubDate>
+      <guid>/project/2021-09/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 273</title>
+      <link>/project/2021-09/cosc273/</link>
+      <pubDate>Mon, 02 Aug 2021 17:51:50 -0400</pubDate>
+      <guid>/project/2021-09/cosc273/</guid>
+      <description>&lt;h1 id=&#34;computer-organization--architecture&#34;&gt;Computer Organization &amp;amp; Architecture&lt;/h1&gt;
+&lt;!-- ## Catalog Description --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 315</title>
+      <link>/project/2021-09/cosc315/</link>
+      <pubDate>Sun, 01 Aug 2021 19:11:12 -0400</pubDate>
+      <guid>/project/2021-09/cosc315/</guid>
+      <description>&lt;!-- [Computer Networks](http://wofford.edu) --&gt;
+&lt;p&gt;Computer  &lt;br&gt;
+Networks&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>COSC 235</title>

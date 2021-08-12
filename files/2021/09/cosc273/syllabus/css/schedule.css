@@ -1,6 +1,5 @@
 
 table.schedule {
-  border: thin solid silver;
   border-collapse: collapse;
   font-style: normal;
   width: 80%;
@@ -11,6 +10,8 @@ table.schedule {
 table.schedule th[colspan="5"] {
   padding: 10px 0;
   text-align: center;
+  color: #3070a8;
+  border: none;
 }
     
 table.schedule td, table th {
@@ -47,7 +48,7 @@ table.schedule tbody td {
 
 
 table.schedule tbody tr td:nth-child(odd) {
-  background-color: silver;
+  background-color: #eee;
 }
 
 /*
@@ -64,7 +65,7 @@ table.schedule tbody tr td>span:first-child {
   padding-bottom: 4px;
   font-variant: small-caps;
   font-weight: bold;
-  color: maroon;
+  color: #3070a8;
   background-color: inherit;
   text-indent: -4px;
 }
@@ -108,18 +109,14 @@ table.schedule tbody tr td ul>li[value]:before {
 
 li.exam {
   color: #000;
-  font-weight: normal;
+  font-weight: bold;
   background: url('images/exam-icon2.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 2px;
-  background-color:#83cfe3;
+
 }
 
-.no-meeting {
-  font-style: italic;
-  color: black;
-}
 
 li:not([class]) {
   background: url('images/nand-gate.png') no-repeat left 0px;
@@ -168,4 +165,10 @@ li.wrap-up {
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
+}
+
+.no-meeting {
+  font-style: italic;
+  color: black;
+  background-color: #eee;
 }

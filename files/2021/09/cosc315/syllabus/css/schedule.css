@@ -51,7 +51,7 @@ table.schedule tbody tr td:first-child {
   padding: 4px;
   font-variant: small-caps;
   font-weight: bold;
-  color: maroon;
+  color: #3070a8;
   text-align: right;
 }
 
@@ -89,7 +89,7 @@ table.schedule tbody tr td ul>li[value]:before {
 */
 
 .no-class {
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 .topic {
@@ -105,11 +105,6 @@ li.exam {
   display: block;
   padding-bottom: 2px;
   background-color:lightyellow;
-}
-
-.no-meeting {
-  background-color: #eee;
-  font-style: italic;
 }
 
 li:not([class]) {
@@ -160,4 +155,9 @@ li.wrap-up {
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
+}
+
+.no-meeting {
+  background-color: #ddd;
+  font-style: italic;
 }

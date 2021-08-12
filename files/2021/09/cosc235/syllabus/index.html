@@ -20,112 +20,72 @@
       integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
       crossorigin="anonymous">
 
+
+      <style>
+        table.table {
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        div.panel+p {
+          margin-top: 0.75em;
+        }
+  
+        h5 {
+          margin-top: 1.5em;
+        }
+  
+        tfoot {
+          font-weight: bold;
+        }
+  
+  
+        #weightings {
+          width: auto;
+        }
+  
+        #weightings tr>td:first-child {
+          font-weight: bold;
+        }
+  
+        h5 {
+          font-variant: small-caps;
+          font-weight: bold;
+        }
+  
+  
+        #weightings thead th[rowspan="2"] {
+          vertical-align: top;
+        }
+  
+        #weightings thead th[colspan="2"] {
+          vertical-align: top;
+          text-align: center;
+          border-bottom: none;
+        }
+  
+        .deleted {
+          text-decoration: line-through;
+          color: red;
+        }
+  
+        .added {
+          color: blue;
+        }
+  
+        .striped-bkg {
+          background: repeating-linear-gradient(45deg,
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2) 10px,
+              rgba(0, 0, 0, 0.3) 10px,
+              rgba(0, 0, 0, 0.3) 20px);
+        }
+      </style>
+      
     <link rel="stylesheet" href="css/screen.css" media="screen">
     <link rel="stylesheet" href="css/print.css" media="print">
-    <style>
-      table.table {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-      }
 
-      div.panel+p {
-        margin-top: 0.75em;
-      }
-
-      h5 {
-        margin-top: 1.5em;
-      }
-
-      tfoot {
-        font-weight: bold;
-      }
-
-      #schedule tbody tr td:first-child {
-        text-align: right;
-        font-family: Menlo, 'Courier New', Courier, monospace;
-        font-size: 90%;
-      }
-
-      span.quiz {
-        font-weight: bold;
-      }
-
-      #weightings {
-        width: auto;
-      }
-
-      #weightings tr>td:first-child {
-        font-weight: bold;
-      }
-
-      h5 {
-        font-variant: small-caps;
-        font-weight: bold;
-      }
-
-      .chapter-title {
-        font-weight: bold;
-        font-variant: small-caps;
-      }
-
-      .chapter-number {
-        font-weight: bold;
-      }
-
-      #schedule tr td {
-        vertical-align: middle;
-      }
-
-      #schedule tr td:nth-child(2) {
-        padding-left: 2em;
-        font-style: italic;
-      }
-
-      #schedule tbody tr td:nth-child(3) {
-        text-align: right;
-        padding-right: 1em;
-        font-family: Menlo, 'Courier New', Courier, monospace;
-        font-size: 90%;
-      }
-
-      #schedule tr td:first-child {
-        text-align: right;
-        padding-right: 1em;
-        vertical-align: top;
-      }
-
-      #schedule tr td[colspan="2"] {
-        text-align: left;
-      }
-
-      #weightings thead th[rowspan="2"] {
-        vertical-align: top;
-      }
-
-      #weightings thead th[colspan="2"] {
-        vertical-align: top;
-        text-align: center;
-        border-bottom: none;
-      }
-
-      .deleted {
-        text-decoration: line-through;
-        color: red;
-      }
-
-      .added {
-        color: blue;
-      }
-
-      .striped-bkg {
-        background: repeating-linear-gradient(45deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2) 10px,
-            rgba(0, 0, 0, 0.3) 10px,
-            rgba(0, 0, 0, 0.3) 20px);
-      }
-    </style>
 
     <link rel="stylesheet" href="css/schedule.css">
 

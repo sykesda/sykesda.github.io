@@ -10,11 +10,11 @@ table.schedule {
 table.schedule th[colspan="5"] {
   padding: 10px 0;
   text-align: center;
-  color: maroon;
+  color: #3070a8;
 }
 
 table.schedule td, table th {
-  border: thin solid silver;
+  border: thin solid black;
   padding: 2px;                                                                                                                                                                                     
 }
 
@@ -22,8 +22,13 @@ table.schedule td:nth-child(odd), table th:nth-child(odd) {
   width: 25%;                                                                                                                                                                                           
 }
 
+table.schedule thead th {
+  text-align: center;
+}
+
 table.schedule td:nth-child(even), table th:nth-child(even) {
-  width: 12.5%;                                                                                                                                                                                              
+  width: 12.5%;
+  background-color: inherit;                                                                                                                                                                                             
 }
 
 table.schedule thead tr:first-child {
@@ -53,7 +58,7 @@ table.schedule tbody tr td>span:first-child {
   padding-bottom: 4px;
   font-variant: small-caps;
   font-weight: bold;
-  color: maroon;
+  color: #3070a8;
   background-color: inherit;
   text-indent: -4px;
 }
@@ -84,8 +89,8 @@ table.schedule tbody tr td ol>li[value]:before {
 }
 
 .exam {
-  color: blue;
-  font-weight: normal;
+  color: black;
+  font-weight: bold;
 }
 
 .no-meeting {

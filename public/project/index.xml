@@ -5,12 +5,31 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Tue, 03 Aug 2021 18:38:39 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Sat, 29 Jan 2022 18:38:39 -0400</lastBuildDate>
     <image>
       <url>/images/icon_hu4d3c67660b7aa92f74bf4db7caa82d2e_46007_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2022-02/cosc235/</link>
+      <pubDate>Sat, 29 Jan 2022 18:38:39 -0400</pubDate>
+      <guid>/project/2022-02/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 351</title>
+      <link>/project/2022-02/cosc351/</link>
+      <pubDate>Fri, 28 Jan 2022 19:11:12 -0400</pubDate>
+      <guid>/project/2022-02/cosc351/</guid>
+      <description>&lt;!-- [Computer Networks](http://wofford.edu) --&gt;
+&lt;p&gt;Algorithm Design &amp;amp; Analysis&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>COSC 235</title>

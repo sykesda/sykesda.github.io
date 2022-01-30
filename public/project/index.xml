@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | D. A. Sykes</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Tue, 03 Aug 2021 18:38:39 -0400</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4d3c67660b7aa92f74bf4db7caa82d2e_46007_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2021-09/cosc235/</link>
+      <pubDate>Tue, 03 Aug 2021 18:38:39 -0400</pubDate>
+      <guid>/project/2021-09/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 273</title>
+      <link>/project/2021-09/cosc273/</link>
+      <pubDate>Mon, 02 Aug 2021 17:51:50 -0400</pubDate>
+      <guid>/project/2021-09/cosc273/</guid>
+      <description>&lt;h1 id=&#34;computer-organization--architecture&#34;&gt;Computer Organization &amp;amp; Architecture&lt;/h1&gt;
+&lt;!-- ## Catalog Description --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 315</title>
+      <link>/project/2021-09/cosc315/</link>
+      <pubDate>Sun, 01 Aug 2021 19:11:12 -0400</pubDate>
+      <guid>/project/2021-09/cosc315/</guid>
+      <description>&lt;!-- [Computer Networks](http://wofford.edu) --&gt;
+&lt;p&gt;Computer  &lt;br&gt;
+Networks&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2021-02/cosc235/</link>
+      <pubDate>Mon, 28 Dec 2020 11:05:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 335</title>
+      <link>/project/2021-02/cosc335/</link>
+      <pubDate>Mon, 28 Dec 2020 11:00:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc335/</guid>
+      <description>&lt;h1 id=&#34;web-applications&#34;&gt;Web Applications&lt;/h1&gt;
+&lt;!-- ## Catalog Description --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 351</title>
+      <link>/project/2021-02/cosc351/</link>
+      <pubDate>Mon, 28 Dec 2020 10:50:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc351/</guid>
+      <description>&lt;!-- [Introduction to Web Authoring](http://wofford.edu) --&gt;
+&lt;p&gt;Algorithm Design &amp;amp; Analysis&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 115</title>
+      <link>/project/2020-09/cosc115/</link>
+      <pubDate>Mon, 03 Aug 2020 19:11:12 -0400</pubDate>
+      <guid>/project/2020-09/cosc115/</guid>
+      <description>&lt;!-- [Introduction to Web Authoring](http://wofford.edu) --&gt;
+&lt;p&gt;Introduction to Web Authoring&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2020-09/cosc235/</link>
+      <pubDate>Mon, 03 Aug 2020 18:38:39 -0400</pubDate>
+      <guid>/project/2020-09/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 273</title>
+      <link>/project/2020-09/cosc273/</link>
+      <pubDate>Sun, 02 Aug 2020 17:51:50 -0400</pubDate>
+      <guid>/project/2020-09/cosc273/</guid>
+      <description>&lt;h1 id=&#34;computer-organization--architecture&#34;&gt;Computer Organization &amp;amp; Architecture&lt;/h1&gt;
+&lt;!-- ## Catalog Description --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

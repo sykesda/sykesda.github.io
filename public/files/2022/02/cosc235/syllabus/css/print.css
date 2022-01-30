@@ -1,0 +1,151 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Garamond, "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.25em;
+  padding: 0;
+  margin: 0.5in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  break-after: avoid;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 1.75em 0 0.25em 0;
+}
+
+body + h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin: 0.5em 0 0.25em 0;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 1em 0 0.25em 0;
+}
+
+.panel-title {
+  break-after: avoid;
+  margin: 1.5em 0 0 0;
+}
+
+.panel .panel .panel-title {
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  font-weight: normal;
+  font-style: italic;
+  text-align: left;
+}
+
+/* .panel .panel table {
+    margin-left: 0.5in;
+}
+
+.panel .panel table thead {
+    background-color: black !important;
+    color: white !important;
+}
+
+.panel .panel table tr {
+    border-top: thin solid black !important;
+    border-bottom: thin solid black !important;
+} */
+
+/* http://designshack.net/articles/css/6-thinks-i-learned-about-print-stylesheets-from-html5-boilerplate/ */
+
+/* Set links to show the URL for external links */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+/* a:not(.url)[href]:after { content: " [" attr(href) "]"; } */
+
+a:not([href^="http"]) {
+  text-decoration: none;
+}
+
+a[href^="http:"]:after,
+a[href^="https:"]:after {
+  content: " [" attr(href) "]";
+}
+
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+
+a[href^="#"]:after {
+  content: "";
+} /* Don't show links for images, or internal links */
+
+img {
+  max-width: 100% !important;
+}
+
+/* @page {
+  margin: 1.25in 1in 1in 1.25in;
+} */
+
+div {
+  border: none;
+}
+
+/* Make sure tabs are expanded when being printed */
+.tab-content > .tab-pane {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+div[role="tabpanel"] {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+div.panel-heading h4.panel-title .glyphicon-collapse-down {
+  display: none;
+}
+
+* {
+  transition: none !important;
+} /* http://wisercoder.com/print-preview-significantly-different-inspector-chrome/ */
+
+div.panel,
+div.panel-group,
+div.list-group-item,
+div.list-group {
+  border: none;
+}
+
+table {
+  break-inside: auto;
+}
+
+tr {
+  break-inside: avoid;
+  break-after: auto;
+}

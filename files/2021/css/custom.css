@@ -1,0 +1,47 @@
+#projects iframe {
+    width: 100%;
+    height: 540px;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+
+ul.nav-pills {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#projects h2 {
+    margin-top: 0;
+}
+
+.jumbotron ul, .jumbotron ol {
+  font-size: 23px;
+}
+
+pre.no-wrap {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.file-name, .folder-name {
+    font-style: italic;
+}
+
+.piazza-folder-name {
+  font-family: monospace;
+}
+
+.chip, .gate {
+    font-family: monospace;
+    letter-spacing: 105%;
+/*     font-weight: bold; */
+    font-size: larger;
+}
+/*
+
+.btn {
+  width: 13px;
+  height: 15px;
+}
+*/

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>COSC 351 Syllabus, Spring 2022</title><!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous">
+
+
+      <style>
+        table.table {
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+  
+        div.panel+p {
+          margin-top: 0.75em;
+        }
+  
+        h5 {
+          margin-top: 1.5em;
+        }
+  
+        tfoot {
+          font-weight: bold;
+        }
+  
+  
+        #weightings {
+          width: auto;
+        }
+  
+        #weightings tr>td:first-child {
+          font-weight: bold;
+        }
+  
+        h5 {
+          font-variant: small-caps;
+          font-weight: bold;
+        }
+  
+  
+        #weightings thead th[rowspan="2"] {
+          vertical-align: top;
+        }
+  
+        #weightings thead th[colspan="2"] {
+          vertical-align: top;
+          text-align: center;
+          border-bottom: none;
+        }
+  
+        .deleted {
+          text-decoration: line-through;
+          color: red;
+        }
+  
+        .added {
+          color: blue;
+        }
+  
+        .striped-bkg {
+          background: repeating-linear-gradient(45deg,
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2) 10px,
+              rgba(0, 0, 0, 0.3) 10px,
+              rgba(0, 0, 0, 0.3) 20px);
+        }
+      </style>
+      
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+
+    <link rel="stylesheet" href="css/schedule.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  </head>
+
+  <body>
+    <h1>COSC 351A<br><em>Algorithm Design &amp; Analysis</em></h1>
+    <h2>Spring 2022</h2>
+    <h3><span class="label label-primary">Syllabus</span></h3>
+
+
+    <div class="container">
+
+
+      <div class="list-group">
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Instructor</h4>
+          <p class="list-group-item-text">David A. Sykes, Ph.D.</p>
+        </div>
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Class sessions</h4>
+          <p class="list-group-item-text">TR 1:00-2:20 P.M. in Olin 116</p>
+        </div>
+
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Office hours</h4>
+           <p class="list-group-item-text">
+            TR 8:30-10:50, MWF 09:30-11:00, 14:00-15:00. Or by appointment. Or by happenstance.
+            TR 8:30&ndash;10:50 A.M.<br>
+            MWF 9:30&ndash;11:00 A.M, 2:00&ndash;3:00 P.M.<br>
+            Or by appointment or by happenstance.
+          </p>
+        </div>
+
+        <div class="list-group-item">
+          <h4 class="list-group-item-heading">Telephone / e-mail</h4>
+          <p class="list-group-item-text">
+            <a href="tel:+18645974524">(864) 597-4524</a> /
+            <a href="mailto:sykesda@wofford.edu">sykesda@wofford.edu</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a class="collapsed accordion-toggle" role="button" data-toggle="collapse"
+                data-parent="#accordion" href="#headingTwo" aria-expanded="false"
+                aria-controls="headingTwo">
+                Catalog description and goals
+              </a>
+            </h4>
+          </div>
+          <div id="headingTwo" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <div class="well">
+                <!--             <p> -->
+                A study of the design and analysis of algorithms for solving problems,
+                including dynamic programming, divide-and-conquer algorithms, greedy algorithms,
+                graph algorithms, and search algorithms. Evaluation of time-space trade-offs.
+                Prerequisites: (COSC 240 or MATH 235) and COSC 350.
+                <!--             </p> -->
+              </div>
+              <p>
+                By the end of the course, you should be able to:
+              </p>
+              <ol>
+                <li class="goal">Understand algorithm strategies, including brute-force, greedy, divide and conquer,
+                  dynamic programming, randomized, branch-and-bound, and recursive backtracking.
+                </li>
+                <li class="goal">Solve problems by applying suitable strategies.</li>
+                <li class="goal">Know standard graph algorithms, including those to find the shortest path and a
+                  spanning tree.
+                </li>
+                <li class="goal">Write programs in C and in C++.</li>
+                <li class="goal">Use components of the C standard library and the C++ Standard Template Library
+                  (STL) based on reading API documentation.
+                </li>
+                <li class="goal">Understand the concepts of <i>encapsulation, inheritance,</i> and
+                  <i>polymorphism</i> in the context of C++.
+                </li>
+                <li class="goal">Understand the concepts of <i>template</i> and <i>operator overloading</i> in the context of C++.
+                </li>
+                <li class="goal">Write a good technical paper.
+                </li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed accordion-toggle" role="button" data-toggle="collapse"
+                data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
+                Textbooks and other resources
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="headingFour">
+            <div class="panel-body">
+
+              <h5>Required textbook</h5>
+
+              <p>
+                <img src="img/textbook-cover.jpg" alt="textbook cover"
+                  style="float: right; margin-left: 10px;" class="textbook-cover">
+                <a href="https://media.pearsoncmg.com/bc/abp/cs-resources/products/product.html#student,isbn=0132316811"
+                  target="_blank">
+                  <cite>Introduction to the Design and Analysis of Algorithms</cite></a>,
+                3<sup>rd</sup> Edition, by Anany Levitin, ©2012. ISBN 978-0132316811.
+              </p>
+
+              <h5>Web resources</h5>
+
+              <p>We will use three websites regularly:</p>
+
+              <ol>
+                <!--
+            <li>
+              The <a href="../">COSC 351 home page</a> contains general information about the course, a link to this syllabus, and a description of each project.
+            </li>
+-->
+                <li>
+                  <!-- <p>
+                    <a href="piazza.com/wofford/spring2021/cosc351">Piazza</a>.
+                    Piazza will host announcements, descriptions of homework assignments, handouts,
+                    and discussions about class topics and projects.
+                    You need to create a free account.
+                    Use your Wofford email address for the account.
+
+                  </p> -->
+                  <p>
+                    This term we will be using Piazza for class discussion.
+                    The system is highly catered to getting you help fast and efficiently from
+                    classmates and me.
+                    Rather than emailing questions to me, post your questions on Piazza.
+                  </p>
+                  <p>
+                    Note: You may post or respond to a post <em>anonymously</em>.
+                    Be aware that your post will be anonymous to classmates but not to me.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Moodle.
+                    You will submit some assignments in Moodle.
+                    Your grades will be recorded in Moodle.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://www.mimirhq.com" target="_blank">Mimir Classroom</a>.
+                    You will submit projects and complete some homework exercises in Mimir Classroom.
+                    Access Mimir Classroom via links in Moodle.
+                  </p>
+                </li>
+              </ol>
+
+
+              <h5>Hardware and software</h5>
+              <p>
+                You will need a computer in order to work on assignments and access the websites we will use.
+                A laptop computer that you can bring to class is ideal.
+                You will be able to write C and C++ code using the Mimir IDE.
+                However, you may also use an IDE running on your own computer.
+              </p>
+              <p>
+                You will also need to use Microsoft Word to create a paper for this course.
+                You can download it from
+                <a href="https://www.wofford.edu/academics/information-technology/technology-for-students/ms-office-download" target="_blank">Wofford College | MS Office Download</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed accordion-toggle" role="button" data-toggle="collapse"
+                data-parent="#accordion" href="#collapse-grades" aria-expanded="false"
+                aria-controls="collapse-grades">
+                Grades
+              </a>
+            </h4>
+          </div>
+          <div id="collapse-grades" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="headingThree">
+            <div class="panel-body">
+
+              <p>
+                Your grade for the course will be based on a weighted average of scores for
+                weekly quizzes,
+                programming projects, and a paper and presentation (semester-long project).
+                The usual grading scale applies: 93–100: A, 90–92: A-, 87–89: B+,
+                83–86: B, 80–82: B-, 77–79: C+, 73–76: C, 70–72: C-, 60–69: D, 0–59: F.
+              </p>
+
+              <table id="weightings" class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th>Component Score</th>
+                    <th>Weight</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Weekly quizzes</td>
+                    <td class="text-right">50%</td>
+                  </tr>
+                  <tr>
+                    <td>Programming projects</td>
+                    <td class="text-right">30%</td>
+                  </tr>
+                  <tr>
+                    <td>Paper and presentation</td>
+                    <td class="text-right">20%</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>TOTAL</td>
+                    <td class="text-right">100%</td>
+                  </tr>
+                </tfoot>
+              </table>
+
+
+              <h5>Weekly quizzes</h5>
+
+              <p>
+                  There will be twelve 5-point quizzes, one given each Wednesday,
+                  except for February 9.
+                  A weekly quiz encourages you to keep up with the work and helps
+                  both you and me assess how well you understand the topics we are covering.
+              </p>
+
+              <p>Quizzes will be conducted as follows.</p>
+
+              <ol>
+                  <li>
+                      A quiz will start at 1:30 P.M. on Wednesdays.
+                      All papers must be turned in when time is called at 1:45 P.M.
+                      At that time you may leave the classroom.
+                      If you have an accommodation that calls for extra time,
+                      you may continue after time is called for another 7&frac12; minutes.
+                  </li>
+                  <li>
+                      Each quiz is worth 5 points&mdash;.
+                      Each of five problems on a quiz is worth 1 point.
+                      <strong>An answer to a problem must be completely correct to be awarded a point.
+                      You must show your work for any problem that requires a sequence of steps to answer.</strong>
+                      No partial credit will be given&mdash;it&rsquo;s &ldquo;all or nothing.&rdquo;                    
+                  </li>
+                  <li>
+                      A &ldquo;rework&rdquo; copy of the quiz will be made available shortly after Wednesday&rsquo;s class meeting ends.
+                      You have an option to rework the problems on the quiz and then submit the <em>rework quiz</em>
+                      <strong>at the start of class on the following Friday</strong>.
+                      If you earn a 5 on a reworked quiz,
+                      then you will earn back <em>half</em> of the points that you missed on the Wednesday
+                      quiz&mdash;for example, if you got 2 on a Wednesday quiz and got a 5 on the rework quiz, then
+                      3.5 will be recorded as the score for that quiz. Otherwise, the score stays at 2.
+                      Note: You may get all of the help you need on the rework, including help from me.
+                      You may not merely copy answers from other students unless you can explain the answer to me.
+                      <strong>Do not post questions about the quiz at Piazza</strong>.
+                  </li>
+              </ol>
+
+              <p>
+                Cell phones, calculators, computer applications, web resources, or other people may not be
+                used during a quiz except for ones you are directed to use.
+              </p>
+
+              <!--
+<p>
+Your two lowest quiz scores will be dropped and not incorporated in the quiz score component of your final score.
+</p>
+-->
+
+
+              <h5>Programming projects</h5>
+              <p>
+                Programming projects give you practical experience with what we are covering in class.
+              </p>
+              <p>
+                  Point values for projects will vary and will reflect the level of challenge.
+                  More challenging projects will have higher point values.
+                  The programming projects portion of your grade is based on the simple mean of scores:
+                  I will add up all of the points you earned for programming projects and divide
+                  that by the number of points that you could have earned.
+              </p>
+              <p>
+                  To get a perfect score on a project, your submission must satisfy <em>all</em> of the requirements
+                  set forth in the project’s description and must be submitted by the deadline.
+                  If you&rsquo;d like to incorporate more than the required features in your code, then please do!
+              </p>
+
+              <h5>Paper and presentation</h5>
+              <p>
+                Being able to communicate in writing and in speech is important.
+                You will write a paper about an algorithm you developed to solve a problem.
+                You will receive several scores on the paper during the semester:
+                a score for your first draft, a score for your second draft, and a score for your
+                <a href="https://www.merriam-webster.com/dictionary/final%20draft" target="_blank">final
+                draft</a>.
+              </p>
+              <p>
+                During the final exam period, you will present your paper to the class.
+                A rubric for the presentation will be provided in advance.
+              </p>
+              <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                  <th>Component Score</th>
+                  <th>Weight</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>First draft</td>
+                  <td class="text-right">5 points</td>
+                </tr>
+                <!-- <tr>
+                  <td>Review of a first draft</td>
+                  <td class="text-right">1 points</td>
+                </tr> -->
+                <tr>
+                  <td>Second draft</td>
+                  <td class="text-right">5 points</td>
+                </tr>
+                <!-- <tr>
+                  <td>Review of a second draft</td>
+                  <td class="text-right">1 points</td>
+                </tr> -->
+                <tr>
+                  <td>Final draft</td>
+                  <td class="text-right">10 points</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td>TOTAL</td>
+                  <td class="text-right">20 points</td>
+                </tr>
+                </tfoot>
+              </table>
+
+              <h5>Homework</h5>
+              <p>
+                  Homework will be assigned regularly, but will not be collected and graded.
+                  Bring written answers to assigned problems to class with you.
+                  I encourage you to work on homework assignments with other students in the class.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="panel panel-default" role="tablist">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a class="collapsed accordion-toggle" role="button" data-toggle="collapse"
+                data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
+                Policies
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="headingFive">
+            <div class="panel-body">
+              <!--             <p>Keep in mind the following.</p> -->
+
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Class meetings</h3>
+                </div>
+                <div class="panel-body">
+
+                  <p>
+                    You are expected to attend each class meeting.
+                  </p>
+                  <p>
+                    Do not attend class or other on-campus events if you are not feeling well.  
+                  </p>
+                  <p>
+                    The <em>General Policy Regarding Attendance</em> in
+                    the <a
+                      href="https://www.wofford.edu/Wofford.edu/Documents/student-experiences/campus-life/student-handbook.pdf">Wofford
+                      College Student Handbook</a> makes <em>you</em> responsible for catching up on any missed classes.
+                    Some class meetings might be accessible on Zoom.
+                    However, you should find someone in the class to take notes for you when you are absent.
+                  </p>
+                  <p>
+                    If you have an excused absence on the day of a quiz <em>and</em> you have contacted me in advance,
+                    then you and I will work out a way to make up the quiz.
+                    Otherwise, I will assign you a score of zero on the quiz.
+                    You may still submit a rework for that quiz.
+                  </p>
+                  <p>
+                    You must be present during the final exam period.
+                  </p>
+
+                </div>
+              </div>
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Computer and phone usage during class meetings</h3>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    During class meetings you may not use a phone or a laptop unless you have an approved
+                    accommodation that allows you to use a laptop or unless I direct you to do so.
+                    You may use a tablet to take notes as long as you use a stylus.
+                    Take notes on paper.
+                    An open laptop is a distraction for you, for others around you, and for me.
+                  </p>
+                </div>
+              </div>
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Office hours</h3>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    I will make every effort to keep the office hours listed at the
+                    top of this syllabus.
+                    If I must cancel or move office hours, I will announce the change in Piazza.
+                  </p>
+                  <p>
+                    Do not make an appointment to meet with me during office hours.
+                    I will be working in my office and you can meet with me there.
+                  </p>
+                  <p>
+                    I appreciate your contacting me during my office hours since it is time I have set
+                    aside and cannot easily use for another purpose.
+                    However, I realize that you might have conflicts.
+                    You are welcome to request an appointment.
+                    If you do, provide me with a list of some times that you are available to meet.
+                    Please do not ask me when I am available.
+                    Or you are welcome to drop by my office if you think I might be there.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Late work</h3>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    <strong>You are expected to meet deadlines for projects and drafts of your paper.</strong>
+                    You may be able to submit work late if both of these conditions are met:
+                  </p>
+                  <ol>
+                    <li>
+                      You contact me <strong>at least the day before the deadline</strong> to request an extension.
+                        In the request, include:
+                        <ol type="a">
+                          <li>a description of the problems you are facing</li>
+                          <li>how much more time you need</li>
+                        </ol>
+                    </li>
+                    <li>
+                      <strong>You submit by the deadline the work you have completed so far</strong> even if
+                      you receive an extension.
+                    </li>
+                  </ol>
+                  <p>
+                    It will be difficult to get an extended deadline if you cannot demonstrate that you had
+                    gotten started on the work.
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Communication</h3>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    Post questions and comments about this course on the Q&amp;A page at Piazza.
+                    You are encouraged to respond to a question or to edit a response to a question.
+                    We are all learning together.
+                    If you send me a question via email or via private Piazza post that should be posted
+                    publicly at Piazza,
+                    my reply will direct you to post your question publicly.
+                  </p>
+                  <p>
+                    <strong>Do not post working code at Piazza.</strong>
+                    Do not include in a response either &ldquo;fixed&rdquo; code or a detailed
+                    description of how to change code to get it to work.
+                    It is okay to post non-working code.
+                  </p>
+
+                  <p>
+                    I usually respond to email messages sent Sunday through Thursday within 24
+                    hours. I will usually respond within 48 hours
+                    to messages sent on a Friday or a Saturday.
+                    I usually respond much sooner to Piazza posts since I have the <a
+                      href="https://piazza.com/product/mobile" target="_blank">Piazza app</a> on my
+                    phone and receive notifications.
+                    However, keep in mind that teaching is my <em>job</em> and not my whole life.
+                  </p>
+                  <p>
+                    You can send me email messages for private matters, such as letting me know you
+                    will be absent or that you'd like to schedule a meeting.
+                    However, I prefer that you post a private message via Piazza.
+                  </p>
+
+                  <!-- <p>
+                    Note: Anonymous Piazza posts are anonymous to classmates but not to me.
+                  </p> -->
+                </div>
+              </div>
+
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Academic integrity</h3>
+                </div>
+                <div class="panel-body">
+
+                  <p><a href="http://catalog.wofford.edu/college/academic-program/honor-code/"
+                      target="_blank">The Honor
+                      Code</a> requires faculty, staff, and students to maintain a high standard of
+                    individual honor and integrity. Work represented as your own must be your own.
+                  </p>
+
+
+                  <p>I encourage you to collaborate with others in the class&mdash;that is, help or
+                    get help from others. However, you may not write code for another student or
+                    provide code to copy.
+                    Doing any of these things is a violation Honor Code.
+                  </p>
+<!--
+                  <p><em>What is the distinction between <em>collaboration</em> and
+                      <em>cheating</em>?</em>
+                  </p>
+                  <p>
+                    <strong>Collaboration</strong>
+                  </p>
+                  <ul>
+                    <li>You may discuss a project with another person.</li>
+                    <li>You may work together to figure out how to attack a problem or develop an algorithm.</li>
+                    <li>
+                      You may describe an issue you are having, such as a bug in your code, and get suggestions
+                      for resolving it.
+                    </li>
+                  </ul>
+                  <p>
+                    Ultimately, you must implement a solution to the problem yourself.
+                  </p>
+                  <strong>Cheating</strong>
+                  <ul>
+                    <li>You are cheating when you copy code from someone else or when you allow someone
+                      to copy from you.
+                    </li>
+                    <li>You are cheating if you let someone else edit your code&mdash;or if you edit
+                      their code.</li>
+                    <li>You are cheating if you are working along with another and decide together
+                      what code to write.</li>
+                  </ul>
+
+                  <p>
+                    For some projects, you might be allowed to work with other students in the
+                    class as a part of a team.
+                    In this case, you are allowed to share all your work with your teammates.
+                    However, you are expected to do all of the work together.
+                    One student should not work without the others present and contributing.
+                  </p>
+-->
+                  <p>
+                    Mimir has a plagiarism detection feature based on <a href="https://theory.stanford.edu/~aiken/moss/" target="_blank"><i>Moss</i></a>
+                    that estimates the similarity of a program compared to both programs submitted by other other students&rsquo;
+                    as well as code available on the internet.
+                    I will utilize this tool to determine how similar submitted programs are.
+                  </p>
+                  <ol>
+                    <li>
+                      I will investigate any similarities that Moss flags above a certain threshold.
+                      If there is a reason for me to suspect copying, each of the students whose programs are flagged will
+                      be required to meet with me individually for a brief inquiry.
+                    </li>
+                    <li>
+                      During this inquiry, I will ask questions about one or more parts of the code&mdash;what that code does and/or
+                      why that code is needed.
+                      Failure to answer competently will be treated as substantial evidence of plagiarism.
+                    </li>
+                    <li>
+                      Depending on the severity of the plagiarism, the consequences will be one of the following:
+                      <ul>
+                        <li>half credit on the assignment</li>
+                        <li>no credit on the assignment</li>
+                        <li>no credit on the assignment and referral to the Honor Council</li>
+                      </ul>
+                      <p>
+                      In summary, if you have written the code in a submission entirely on your own,
+                      you will have no trouble answering any questions I have about that code.
+                      If you copied code from other sources, then you are responsible for fully understanding,
+                      and being able to explain the code you copied.
+                      Failure to do so is evidence of plagiarism and will be treated as such.
+                      </p>
+                    </li>
+                  </ol>
+                  <p>
+                    Don&rsquo;t cheat because you are up against a deadline. Start each assignment
+                    as soon as it is given. If you run into a glitch:
+                  </p>
+                  <ul>
+                    <li>
+                      Seek help from me, either by posting at Piazza or consulting with me.
+                    </li>
+                    <li>
+                      Submit on time the work you have done, even if it is not fully completed.
+                      You will likely get partial credit for your work and/or an opportunity to fix
+                      any problems and raise the score.
+                    </li>
+                  </ul>
+
+
+                </div>
+
+
+              </div>
+
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Reasonable accommodations for students with disabilities
+                  </h3>
+                </div>
+                <div class="panel-body">
+                  <p>
+                    If you need accommodations, go to the <i>Student</i> tab in <a
+                      href="https://my.wofford.edu/">myWofford</a> and investigate the <i>Request
+                      Accommodations</i> channel.
+                    I&rsquo;ll make every effort to work with you.
+                    Take care of this during the first week of classes and before the first quiz.
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default" role="tablist">
+          <div class="panel-heading" role="tab" id="headingSix">
+            <h4 class="panel-title">
+              <a class="collapsed accordion-toggle" role="button" data-toggle="collapse"
+                data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+                aria-controls="collapseSix">
+                Tentative Schedule
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+            aria-labelledby="headingSix">
+            <div class="panel-body">
+
+              <p>
+                We will delve at first into the C programming language.
+                Then we will work quickly through the first parts of Chapters 1 through 10 of the Levitin book.
+                Then we will circle back to study more deeply each strategy covered by those chapters.
+                Along the way, we will work on your paper.
+              </p>
+              <p>The schedule is subject to change.</p>
+
+
+              <table class="table table-striped table-bordered table-hover" id="tentative-schedule">
+                <thead>
+                  <tr>
+                    <th>Week</th>
+                    <th> Topics</th>
+                    <!-- <th>Reading<br>(Levitin)</th> -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td>FEB 7</td>
+                    <td>
+                      Review of COSC 350.<br>
+                      Levitin Chapter 1 <i>Introduction</i>.
+                    </td>
+                    <!-- <td>§1.1-1.4</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>FEB 14</td>
+                    <td>
+                      Finding a problem to solve.<br>
+                      Levitin Chapter 2 <i>Fundamentals of the Analysis of Algorithm Efficiency</i> and Appendix A <i>Useful Formulas for the Analysis of Algorithms</i>.
+                    </td>
+                    <!-- <td>§2.1-2.3</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>FEB 21</td>
+                    <td>
+                      The C programming language.<br>
+                      Starting your paper.
+                    </td>
+                    <!-- <td>§2.4-2.5, Appendix B</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>FEB 28</td>
+                    <td>
+                      Algorithm strategies overview<br>
+                      Solving <em>your</em> problem and pseudocode.
+                    </td>
+                    <!-- <td>§3.1-3.4</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAR 7</td>
+                    <td>
+                      Chapter 3 <i>Brute Force and Exhaustive Search</i>.
+                    </td>
+                    <!-- <td>§3.5, 4.1-4.6</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAR 14</td>
+                    <td>
+                      Levitin Chapter 4 <i>Decrease-and-Conquer</i>.
+                    </td>
+                    <!-- <td>§5.1-5.5</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAR 21</td>
+                    <td>
+                      Levitin Chapter 5 <i>Divide-and-Conquer</i>.
+                    </td>
+                    <!-- <td>§6.1-6.5</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAR 28</td>
+                    <td>
+                      Levitin Chapter 6 <i>Transform-and-Conquer</i>.
+                    </td>
+                    <!-- <td>§7.2-7.4</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>APR 04</td>
+                    <td>Spring break.</td>
+                    <!-- <td>§8.1-8.4</td> -->
+
+                  </tr>
+                  <tr class="active">
+                    <td>APR 11</td>
+                    <td>
+                      Levitin Chapter 7 <i>Space and Time Trade-Offs</i>.<br>
+                      C++ classes
+                    </td>
+                    <!-- <td>§8.1-8.4</td> -->
+
+                  </tr>
+                  <tr class="active">
+                    <td>APR 18</td>
+                    <td>
+                      Levitin Chapter 8 <i>Dynamic Programming</i>.
+                    </td>
+                    <!-- <td>§9.1-9.4</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>APR 25</td>
+                    <td>
+                      Levitin Chapter 9 <i>Greedy Technique</i>.<br>
+                      C++ inheritance
+                    </td>
+                    <!-- <td>§10.1-10.2</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>APR 02</td>
+                    <td>
+                      Levitin Chapter 11 <i>Limitations of Algorithm Power</i>.<br>
+                      Levitin Chapter 12 <i>Coping with the Limitations of Algorithm Power</i>.<br>
+                      C++ templates and overloading
+                    </td>
+                    <!-- <td>§11.1-11.3</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAY 09</td>
+                    <td>
+                      Levitin <i>Epilogue</i><br>
+                      Catch-up and wrap-up.
+                    </td>
+                    <!-- <td>§11.4-12.4</td> -->
+                  </tr>
+                  <tr class="active">
+                    <td>MAY 16</td>
+                    <td>
+                      <em>Final exam week</em><br>
+                      Presentations will be given on Wednesday, May 18 from 2:00-5:00 P.M.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--     <script src="js/bootstrap.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+
+    <script>
+      /* <!-- http://stackoverflow.com/questions/13778703/adding-open-closed-icon-to-twitter-bootstrap-collapsibles-accordions --> */
+      /*
+       $(document).ready(function(){
+       $('#accordProfile').on('shown', function () {
+       $(".icon-chevron-down").removeClass("icon-chevron-down").addClass("icon-chevron-up");
+       });
+  
+       $('#accordProfile').on('hidden', function () {
+       $(".icon-chevron-up").removeClass("icon-chevron-up").addClass("icon-chevron-down");
+       });
+       });
+       */
+    </script>
+  </body>
+
+</html>

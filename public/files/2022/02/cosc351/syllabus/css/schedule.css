@@ -88,16 +88,16 @@ table.schedule tbody tr td ul>li[value]:before {
 }
 */
 
-.no-class {
+table.schedule .no-class {
   background-color: #ddd;
 }
 
-.topic {
+table.schedule .topic {
   font-weight: bold;
   font-variant: small-caps;
 }
 
-li.exam {
+table.schedule li.exam {
   color: inherit;
   font-weight: normal;
   background: url('images/exam-icon2.png') no-repeat left 0px;
@@ -107,57 +107,57 @@ li.exam {
   background-color:lightyellow;
 }
 
-li:not([class]) {
+table.schedule li:not([class]) {
   background: url('images/network.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.in-class-lab,
-li.project {
+table.schedule li.in-class-lab,
+table.schedule li.project {
   background: url('images/laptop-wifi-icon.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.k-r-book {
+table.schedule li.k-r-book {
   background: url('images/k-r-book.jpg') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.n2t-project {
+table.schedule li.n2t-project {
   background: url('images/project.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.sys-prog {
+table.schedule li.sys-prog {
   background: url('images/chip.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.mips {
+table.schedule li.mips {
   background: url('images/MIPS-Processors.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-li.wrap-up {
+table.schedule li.wrap-up {
   background: url('images/gift.png') no-repeat left 0px;
   padding-left: 22px;
   display: block;
   padding-bottom: 4px;
 }
 
-.no-meeting {
+table.schedule .no-meeting {
   background-color: #ddd;
   font-style: italic;
 }

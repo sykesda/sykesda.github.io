@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021-spring | D. A. Sykes</title>
+    <link>/tag/2021-spring/</link>
+      <atom:link href="/tag/2021-spring/index.xml" rel="self" type="application/rss+xml" />
+    <description>2021-spring</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 David A. Sykes</copyright><lastBuildDate>Mon, 28 Dec 2020 11:05:50 -0400</lastBuildDate>
+    <image>
+      <url>/images/icon_hu4d3c67660b7aa92f74bf4db7caa82d2e_46007_512x512_fill_lanczos_center_2.png</url>
+      <title>2021-spring</title>
+      <link>/tag/2021-spring/</link>
+    </image>
+    
+    <item>
+      <title>COSC 235</title>
+      <link>/project/2021-02/cosc235/</link>
+      <pubDate>Mon, 28 Dec 2020 11:05:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc235/</guid>
+      <description>&lt;h2 id=&#34;programming--problem-solving&#34;&gt;Programming &amp;amp; Problem Solving&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 335</title>
+      <link>/project/2021-02/cosc335/</link>
+      <pubDate>Mon, 28 Dec 2020 11:00:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc335/</guid>
+      <description>&lt;h1 id=&#34;web-applications&#34;&gt;Web Applications&lt;/h1&gt;
+&lt;!-- ## Catalog Description --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>COSC 351</title>
+      <link>/project/2021-02/cosc351/</link>
+      <pubDate>Mon, 28 Dec 2020 10:50:50 -0400</pubDate>
+      <guid>/project/2021-02/cosc351/</guid>
+      <description>&lt;!-- [Introduction to Web Authoring](http://wofford.edu) --&gt;
+&lt;p&gt;Algorithm Design &amp;amp; Analysis&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

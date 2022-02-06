@@ -5,13 +5,7 @@
 3. Add a new filter in the file `projects.md`.
 
 Check the site by setting the working directory to `academic-kickstart-master/` and then executing the command `hugo server -D`. Look for errors. Test the links in a browser at http://localhost:1313.
-
 It's probably a good idea to make a backup copy before generating the site using the command `hugo -D`. The generated files are placed in the `public/` directory.
-
 Manually edit the &lt;h3&gt; element on the home page: `public/index.html`.
-
-Upload the generated site to GitHub in repository `sykesda/sykesda.github.io`. Using the GitHub app makes this easier.
-
-NOT SURE OF THE SIGNIFICANCE OF THE FOLLOWING:
-Make `public` the working directory and then `cp -R * /Users/sykesda/Documents/GitHub/sykesda.github.io`. Files that were changed should be pushed to GitHub.
+Upload the generated site to GitHub in repository `sykesda/sykesda.github.io`. Using the GitHub app makes this easier. Make `public` the working directory and then `cp -R * /Users/sykesda/Documents/GitHub/sykesda.github.io`. Files that were changed should be pushed to GitHub.
 Check out the site at `https://sykesda.github.io`.

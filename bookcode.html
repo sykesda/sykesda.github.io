@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Book Code (2nd ed.)</title>
+  <link rel="stylesheet" href="css/prism.css">
+<!--   <link href="https://cdnjs.com/prism@v1.x/themes/prism.css" rel="stylesheet" /> -->
+  <style>
+/*
+    * {
+      border: thin solid green;
+    }
+*/
+    body{
+      margin: 5em 10px 10px 3em;
+    }
+    .page-number {  /* Adapted from https://kaliko.com/blog/circled-number-with-pure-css/ */
+      float: left;
+      margin: 0 1em 0 0;
+      background-color: #000;
+      border-radius: 1em;
+      -moz-border-radius: 0.9em;
+      -webkit-border-radius: 0.9em;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.8em;
+      margin-right: 5px;
+      text-align: center;
+      width: 1.8em;
+    }
+    input[type="text"] {
+      text-align: right;
+      padding: 2px;
+      width: 2.5em;
+      color: blue;
+    }
+    .hidden {
+      display: none;
+      /* border: thin red solid; */
+    }
+    div.code-toolbar {
+      margin-bottom: 1.5em;
+    }
+    button {
+      color: blue;
+    }
+    button[disabled] {
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="filter">
+    Filter by page number: <input type="text" id="page-number" placeholder="99" pattern="^[1-9][0-9]{0,2}$">
+    <button disabled id="clear-filter-button">Clear</button>
+  </p>
+
+<div class="page-number">11</div>
+<pre><code class="language-python line-numbers">
+print('100 + 23 =', 100 + 23)
+'Hello, world!'
+print('Hello, world!')
+</code></pre>
+
+<div class="page-number">15</div>
+<pre><code class="language-python line-numbers">
+def welcome(name):
+    print('Hello,', name)
+
+# Get the user's name and display a welcome message
+name = input('Enter your name: ')
+welcome(name)
+</code></pre>
+
+<div class="page-number">15</div>
+<pre><code class="language-python line-numbers">
+# A program to display the first 9 Fibonacci numbers
+
+def fib(n):
+    # Input: an integer value n where n &gt; 0
+    # Return: the nth Fibonacci number
+
+    curr = 1
+    prev = 1
+    for i in range(n - 2):
+        curr, prev = curr + prev, curr
+    return curr
+
+
+for k in range(1, 10):
+    print("Fibonacci #", k, ":", fib(k))
+</code></pre>
+
+<div class="page-number">27</div>
+<pre><code class="language-python line-numbers">
+initials = "das"
+weight = 145
+height = 66.5
+bmi = 703 * weight / height ** 2
+initials = initials.upper() + "'s"
+print(initials, 'BMI =', bmi)
+</code></pre>
+
+
+<div class="page-number">28</div>
+<pre><code class="language-python line-numbers">
+a = 2
+b = 2 * a
+c = 3 * a
+a = a + 1
+b = b + c
+d = a * b * c
+</code></pre>
+
+<div class="page-number">29</div>
+<pre><code class="language-python line-numbers">
+	first_name = input('Enter your name: ')
+	age = input('Enter your age, ' + first_name + ': ')
+</code></pre>
+
+<div class="page-number">30</div>
+<pre><code class="language-python line-numbers">
+first_name = input('Enter your name: ')
+age = int(input('Enter your age, ' + first_name + ': '))
+</code></pre>
+
+<div class="page-number">30</div>
+<pre><code class="language-python line-numbers">
+	first_name = input('Enter your name: ')
+	age = int(input('Enter your age, ' + first_name + ': '))
+	print(first_name + ',', 'you will be', age + 1, 'years old a year from now.')
+</code></pre>
+
+<div class="page-number">31</div>
+<pre><code class="language-python line-numbers">
+	first_name = input('Enter your name: ')
+	age = int(input('Enter your age, ' + first_name + ': '))
+	
+	print(first_name + ',' + ' you will be ' + str(age + 1) +
+	      ' years old a year from now.')
+</code></pre>
+
+<div class="page-number">31</div>
+<pre><code class="language-python line-numbers">
+	first_name = input('Enter your name: ')
+	age = int(input('Enter your age, ' + first_name + ': '))
+	
+	print(first_name, end=", ")    # ', ' printed instead of a newline
+	print('you will be', age + 1, 'years old a year from now.')
+</code></pre>
+
+<div class="page-number">32</div>
+<pre><code class="language-python line-numbers">
+	first_name = input('Enter your name: ')
+	age = int(input('Enter your age, ' + first_name + ': '))
+	
+	print(f'{first_name}, you will be {age + 1} years old a year from now.')
+</code></pre>
+
+<div class="page-number">32</div>
+<pre><code class="language-python line-numbers">
+# Display the purpose of this program
+print("A program to compute the area and perimeter of a rectangle.")
+print()
+
+# Input a width and height
+width = float(input('Enter the width: '))
+height = float(input('Enter the height: '))
+
+# Process the inputs to compute the area and the length of the perimeter
+area = width * height
+perimeter = 2 * (width + height)
+
+# Output the results
+print('     Area:', area, 'square units.')
+print('Perimeter:', perimeter, 'linear units.')
+</code></pre>
+
+<div class="page-number">35</div>
+<pre><code class="language-python line-numbers">
+weight = 145
+height = 66.5
+bmi = round(703 * weight / height ** 2, 1)
+printf(f'Your BMI is {bmi}')
+</code></pre>
+
+
+<div class="page-number">36</div>
+<pre><code class="language-python line-numbers">
+	email_addr = input('Enter your email address: ')
+	fixed_email_addr = email_addr.lower()
+	print('You entered:', fixed_email_addr)
+</code></pre>
+
+<div class="page-number">36</div>
+<pre><code class="language-python line-numbers">
+input_email_addr = input('Enter your email address: ')
+
+#  Remove any leading and trailing spaces
+stripped_email_addr = input_email_addr.strip()
+
+# Convert all letters to lower case
+email_addr = stripped_email_addr.lower()
+
+print('You entered:', email_addr)
+</code></pre>
+
+<div class="page-number">37</div>
+<pre><code class="language-python line-numbers">
+entered_email_addr = input('Enter your email address: ')
+
+# Remove any leading and trailing spaces and convert input to lower case
+email_addr = entered_email_addr.strip().lower()
+print('You entered:', email_addr)
+</code></pre>
+
+<div class="page-number">37</div>
+<pre><code class="language-python line-numbers">
+# Input an email address, strip it, and then convert  to lower case
+email_addr = input('Enter your email address: ').strip().lower()
+print('You entered:', email_addr)
+</code></pre>
+
+<div class="page-number">38</div>
+<pre><code class="language-python line-numbers">
+input_email_addr = input('Enter your email address: ')
+
+#  Remove any leading and trailing spaces
+stripped_email_addr = input_email_addr.strip()
+
+# Convert all letters to lower case
+email_addr = stripped_email_addr.lower()
+
+print('You entered:', email_addr)
+</code></pre>
+
+<div class="page-number">41</div>
+<pre><code class="language-python line-numbers">
+import math
+
+number1 = int(input('Enter a positive integer: '))
+number2 = int(input('Enter another positive integer: '))
+greatest_common_divisor = math.gcd(number1, number2)
+print(f'GCD({number1}, {number2}) is {greatest_common_divisor}')
+</code></pre>
+
+<div class="page-number">43</div>
+<pre><code class="language-python line-numbers">
+import random
+
+wb1 = random.randint(1, 69)
+wb2 = random.randint(1, 69)
+wb3 = random.randint(1, 69)
+wb4 = random.randint(1, 69)
+wb5 = random.randint(1, 69)
+rb = random.randint(1, 26)
+
+print('Picks:', wb1, wb2, wb3, wb4, wb5, rb)
+</code></pre>
+
+<div class="page-number">45</div>
+<pre><code class="language-python line-numbers">
+	text = 'Dave is nuts!'
+	first = text[0]
+	second = text[1]
+	middle = text[len(text) // 2]
+	last = text[len(text) - 1]
+	print(f"The first character is '{first}' and the second is '{second}'.")
+	print(f"The middle character is '{middle}' and the last is '{last}'.")
+</code></pre>
+
+<div class="page-number">52</div>
+<pre><code class="language-python line-numbers">
+input_line = input('Enter some words separated by spaces: ')
+words = input_line.split()
+print(words)
+
+comma_separated_words = ', '.join(words)
+print()
+print('Entered:', comma_separated_words)
+
+newline_separated_words = '\n'.join(words)
+print()
+print('Here are the words:')
+print(newline_separated_words)
+</code></pre>
+
+<div class="page-number">53</div>
+<pre><code class="language-python line-numbers">
+# Get the input, splitting the input line into a list of values
+input_line = input('Enter quiz scores separated by spaces: ')
+scores = input_line.split()
+
+# Compute the average
+average_score = sum(scores) / len(scores)
+
+# Print the average
+print('The average score is', average_score, end='.\n')
+</code></pre>
+
+<div class="page-number">54</div>
+<pre><code class="language-python line-numbers">
+# Get the input, splitting the input line into a list of int values
+input_line = input('Enter quiz scores separated by spaces: ')
+scores = [int(s) for s in input_line.split()]
+
+# Compute the average
+average_score = sum(scores) / len(scores)
+
+# Print the average
+print('The average score is', average_score, end='.\n')
+</code></pre>
+
+<div class="page-number">56</div>
+<pre><code class="language-python line-numbers">
+import random
+
+hopper = [ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
+          16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
+          46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+          61, 62, 63, 64, 65, 66, 67, 68, 69]
+
+# Pick 5 white balls
+i = random.randrange(69)
+wb1 = hopper[i]
+del hopper[i]
+i = random.randrange(68)
+wb2 = hopper[i]
+del hopper[i]
+i = random.randrange(67)
+wb3 = hopper[i]
+del hopper[i]
+i = random.randrange(66)
+wb4 = hopper[i]
+del hopper[i]
+i = random.randrange(65)
+wb5 = hopper[i]
+del hopper[i]
+
+# Pick one red ball
+rb = random.randint(1, 26)
+
+print('Picks:', wb1, wb2, wb3, wb4, wb5, rb)
+</code></pre>
+
+<div class="page-number">55</div>
+<pre><code class="language-python line-numbers">
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: '))
+bmi = round((703 * wieght) / height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<div class="page-number">59</div>
+<pre><code class="language-python line-numbers">
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: ')
+bmi = round((703 * weight) / height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<div class="page-number">60</div>
+<pre><code class="language-python line-numbers">
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: ')
+bmi = round((703 * weight) / height ** 2, 1)
+print(f'Your BMI is {bmi})
+</code></pre>
+
+<div class="page-number">61</div>
+<pre><code class="language-python line-numbers">
+weight = input('Enter your weight in pounds: ')
+height = input('Enter your height in inches: '
+bmi = round((703 * weight) / height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<!--
+<div class="page-number">56</div>
+<pre><code class="language-python line-numbers">
+weight = input('Enter your weight in pounds: ')
+height = input('Enter your height in inches: ')
+bmi = round((703 * weight) / height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+-->
+
+<div class="page-number">62</div>
+<pre><code class="language-python line-numbers">
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: '))
+bmi = round((703 * weight) // height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<div class="page-number">62</div>
+<pre><code class="language-python line-numbers">
+weight = input('Enter your weight in pounds: ')
+height = input('Enter your height in inches: ')
+print(f'DEBUG: weight = {repr(weight)}, height = {repr(height)}')
+bmi = round((703 * weight) // height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<div class="page-number">63</div>
+<pre><code class="language-python line-numbers">
+weight = float(input('Enter your weight in pounds: '))
+height = float(input('Enter your height in inches: '))
+# print(f'DEBUG: weight = {repr(weight)}, height = {repr(height)}')
+bmi = round((703 * weight) // height ** 2, 1)
+print(f'Your BMI is {bmi}')
+</code></pre>
+
+<div class="page-number">67</div>
+<pre><code class="language-python line-numbers">
+def pick(hopper):
+    i = random.randrange(len(hopper))
+    number = hopper[i]
+    del hopper[i]
+    return number
+</code></pre>
+
+<div class="page-number">67</div>
+<pre><code class="language-python line-numbers">
+import random
+
+
+def pick(hopper):
+    i = random.randrange(len(hopper))
+    number = hopper[i]
+    del hopper[i]
+    return number
+
+
+hopper = [ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
+          16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+          31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
+          46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+          61, 62, 63, 64, 65, 66, 67, 68, 69]
+
+wb1 = pick(hopper)
+wb2 = pick(hopper)
+wb3 = pick(hopper)
+wb4 = pick(hopper)
+wb5 = pick(hopper)
+
+# Pick one red ball
+rb = random.randint(1, 26)
+
+print('Picks:', wb1, wb2, wb3, wb4, wb5, rb)
+</code></pre>
+
+<div class="page-number">63</div>
+<pre><code class="language-python line-numbers">
+def pick(hopper):
+    """
+    Pick an item at random from hopper and then remove it.
+    
+    Args:
+        hopper (list): a list of items to be picked from
+
+    Returns:
+        an item selected at random from hopper
+        side effect: remove selected item from hopper
+    """
+    i = random.randrange(len(hopper))
+    number = hopper[i]
+    del hopper[i]
+    return number
+</code></pre>
+
+<div class="page-number">68</div>
+<pre><code class="language-python line-numbers">
+def pick(hopper):
+    """
+    Pick an item at random from hopper and then remove it.
+    
+    Args:
+        hopper (list): a list of items to be picked from
+
+    Returns:
+        an item selected at random from hopper
+        side effect: remove selected item from hopper
+    """
+    i = random.randrange(len(hopper))
+    number = hopper[i]
+    del hopper[i]
+    return number
+</code></pre>
+
+
+<div class="page-number">68</div>
+<pre><code class="language-python line-numbers">
+import random
+
+
+def pick(hopper):
+    """
+    Pick an item at random from hopper and then remove it.
+    
+    Args:
+        hopper (list): a list of items to be picked from
+
+    Returns:
+        an item selected at random from hopper
+        side effect: remove selected item from hopper
+    """
+    i = random.randrange(len(hopper))
+    number = hopper[i]
+    del hopper[i]
+    return number
+
+
+def main():
+    """
+    Print a random pick for Powerball.
+
+    Returns:
+        None
+    """
+
+    hopper = [ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15,
+              16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+              31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
+              46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
+              61, 62, 63, 64, 65, 66, 67, 68, 69]
+
+    wb1 = pick(hopper)
+    wb2 = pick(hopper)
+    wb3 = pick(hopper)
+    wb4 = pick(hopper)
+    wb5 = pick(hopper)
+
+    # Pick one red ball
+    rb = random.randint(1, 26)
+
+    print('Picks:', wb1, wb2, wb3, wb4, wb5, rb)
+
+
+main()
+</code></pre>
+
+
+<div class="page-number">70</div>
+<pre><code class="language-python line-numbers">
+v = 5
+x = 10
+c = 100
+m = 1000
+
+def spam(m, n):
+    c = m + n
+    d = c * x
+    return d
+
+print(f'Before call: v = {v}, x = {x}, c = {c}, m = {m}')
+print(f'spam(1, 2) = {spam(1, 2)}')
+print(f'After call:  v = {v}, x = {x}, c = {c}, m = {m}')
+</code></pre>
+
+<div class="page-number">67</div>
+<pre><code class="language-python line-numbers">
+def to_celsius(temperature):
+    """Convert a temperature in degrees Celsius to Fahrenheit.
+
+    Args:
+        temperature (float): a temperature measured in degrees Celsius
+
+    Returns:
+        The Fahrenheit equivalent of the temperature.
+    """
+    # TODO Replace this comment with your code
+</code></pre>
+
+<div class="page-number">72</div>
+<pre><code class="language-python line-numbers">
+def bmi(height, weight):
+    """
+    Compute the BMI for someone having a given height and weight.
+    
+    Args:
+        height (float): height in inches
+        weight (float): weight in pounds
+
+    Returns:
+        the BMI for someone having this height and weight
+    """
+	# TODO - replace this comment with your own code
+
+def main():
+    person_height = float(input('Enter your height in inches: '))
+    person_weight = float(input('Enter your weight in pounds: '))
+
+    print(f'Your BMI is {bmi(person_height, person_weight)}')
+
+main()
+</code></pre>
+
+<div class="page-number">76</div>
+<pre><code class="language-python line-numbers">
+import sys
+
+age = int(input('Enter your age (over 20): '))
+if age &lt;= 20:
+    print('The age must be at least 21.')
+    sys.exit(1)
+else:
+    print(f'DEBUG: Using age {age}')
+    &vellip;
+</code></pre>
+
+<div class="page-number">76</div>
+<pre><code class="language-python line-numbers">
+import sys
+
+age = int(input('Enter your age (over 20): '))
+if age &lt;= 20:
+    print('The age must be at least 21. Try again.')
+    age = int(input('Enter your age (over 20): '))
+
+print(f'DEBUG: Using age {age}')
+ &vellip;
+</code></pre>
+
+<div class="page-number">77</div>
+<pre><code class="language-python line-numbers">
+import sys
+
+age = int(input('Enter your age (over 20): '))
+if age &lt;= 20:
+    print('The age must be at least 21. Try again.')
+    age = int(input('Enter your age (over 20): '))
+else:
+    pass
+print(f'DEBUG: Using age {age}')
+ &vellip;
+</code></pre>
+
+<div class="page-number">78</div>
+<pre><code class="language-python line-numbers">
+def sign(x):
+    """
+    Determine the sign of a number: +, 0, or -
+    Args:
+        x (float): a number
+
+    Returns:
+        -1 if x is negative, 0 if x is zero, 1 if x is positive
+    """
+    if x &lt; 0:
+        result = -1
+    elif x == 0:
+        result = 0
+    else:
+        result = 1
+    return result
+</code></pre>
+
+<div class="page-number">79</div>
+<pre><code class="language-python line-numbers">
+def max_of_3(a, b, c):
+    """Return the maximum of a, b, and c"""
+    if a &gt; b &gt; c:
+        max_value = a
+    if a &gt; c &gt; b:
+        max_value = a
+    if b &gt; a &gt; c:
+        max_value = b
+    if b &gt; c &gt; a:
+        max_value = b
+    if c &gt; a &gt; b:
+        max_value = c
+    if c &gt; b &gt; a:
+        max_value = c
+
+    return max_value
+</code></pre>
+
+<div class="page-number">79</div>
+<pre><code class="language-python line-numbers">
+def max_of_3(a, b, c):
+    """Return the maximum of a, b, and c"""
+    if a &gt; b &gt; c:
+        max_value = a
+    elif a &gt; c &gt; b:
+        max_value = a
+    elif b &gt; a &gt; c:
+        max_value = b
+    elif b &gt; c &gt; a:
+        max_value = b
+    elif c &gt; a &gt; b:
+        max_value = c
+    elif c &gt; b &gt; a:
+        max_value = c
+    else:
+        # All three values are equal
+        max_value = a
+
+    return max_value
+</code></pre>
+
+<div class="page-number">80</div>
+<pre><code class="language-python line-numbers">
+def max_of_3(a, b, c):
+    """Return the maximum of a, b, and c"""
+    if a &gt; b:
+        if a &gt; c:
+            max_value = a
+        elif b &gt; c:
+            max_value = b
+        else:
+            max_value = c
+    else:
+        if b &gt; c:
+            max_value = b
+        elif a &gt; c:
+            max_value = a
+        else:
+            max_value = c
+    return max_value
+</code></pre>
+
+<div class="page-number">81</div>
+<pre><code class="language-python line-numbers">
+def max_of_3(a, b, c):
+    """Return the maximum of a, b, and c"""
+    # assume a is the maximum and then check b, then c
+    max_value = a
+    if b &gt; max_value:
+        max_value = b
+    if c &gt; max_value:
+        max_value = c
+
+    return max_value
+</code></pre>
+
+<div class="page-number">81</div>
+<pre><code class="language-python line-numbers">
+def decide(choice1, choice2):
+    """
+    Determine which of two choices wins.
+    Args:
+        choice1 (str): One of the values 'rock', 'paper', or 'scissors'
+        choice2 (str): One of the values 'rock', 'paper', or 'scissors'
+
+    Returns:
+        1 if choice1 beats choice2, 2 if choice2 beats choice1, 0 otherwsie
+    """
+    # TODO Replace this comment with code
+</code></pre>
+
+<div class="page-number">82</div>
+<pre><code class="language-python line-numbers">
+def letter_grade(score):
+    """Return a letter grade for a score between 0 and 100."""
+
+    if score &gt;= 90:
+        result = 'A'
+    elif 80 &lt;= score &lt; 90:
+        result = 'B'
+    elif 70 &lt;= score &lt; 80:
+        result = 'C'
+    elif 60 &lt;= score &lt; 70:
+        result = 'D'
+    else:
+        result = 'F'
+
+    return result
+</code></pre>
+
+<div class="page-number">84</div>
+<pre><code class="language-python line-numbers">
+# Print each item in a list on a separate line
+for item in lst:
+    print(item)
+
+# Print each character in a string as lower-case on a separate line
+for ch in s:
+    print(ch.lower())
+</code></pre>
+
+<div class="page-number">84</div>
+<pre><code class="language-python line-numbers">
+# Prompt a user for a number n and then read that many input values
+n = int(input('Enter a positive integer: '))
+inputs = []    # accumulator
+for i in range(n):
+    inputs.append(int(input('Enter a number: ')))
+</code></pre>
+
+<div class="page-number">84</div>
+<pre><code class="language-python line-numbers">
+# Convert each item in lst to a string 
+for i in range(len(lst)):
+    lst[i] = str(lst[i])
+</code></pre>
+
+<div class="page-number">84</div>
+<pre><code class="language-python line-numbers">
+for i, item in enumerate(lst):
+    lst[i] = str(item)
+</code></pre>
+
+<div class="page-number">85</div>
+<pre><code class="language-python line-numbers">
+def fib(n):
+     """
+     Compute the nth Fibonacci number.
+     Args:
+         n (int): a positive int value
+ 
+     Returns:
+         The nth number in the Fibonacci sequence
+     """
+     a = 1   # accumulator - current number in the sequence
+     b = 1   # accumulator - next number in the sequence
+     for i in range(n - 1):
+         c = a + b   # sum of current number and next number
+         a = b       # current number set to next number
+         b = c       # next number set to the sum
+     return a
+</code></pre>
+
+<div class="page-number">85</div>
+<pre><code class="language-python line-numbers">
+def fix_list(lst):
+    """
+    Replace any negative value in a list with zero.
+
+    Args:
+        lst (list): a list of numbers
+
+    Returns:
+        None.
+        Side effect: replaces any negative item with 0
+    """
+    for i, value in enumerate(lst):
+        if value &lt; 0:
+            lst[i] = 0
+</code></pre>
+
+<div class="page-number">86</div>
+<pre><code class="language-python line-numbers">
+def smallest_positive(lst):
+    """
+    Find the smallest positive number in a list.
+    
+    Args:
+        lst (list): a list containing at least one positive number.
+
+    Returns:
+        the smallest positive value in lst.
+    """
+</code></pre>
+
+<div class="page-number">86</div>
+<pre><code class="language-python line-numbers">
+def index_smallest_positive(lst):
+    """
+    Find the index of the smallest positive number in a list.
+    
+    Args:
+         lst (list): a list containing at least one positive number.
+
+    Returns:
+        the index of the smallest positive value in lst.
+    """
+</code></pre>
+
+<div class="page-number">88</div>
+<pre><code class="language-python line-numbers">
+import sys
+
+age = int(input('Enter your age (over 20): '))
+while age &lt;= 20:
+    print('The age must be at least 21. Try again.')
+    age = int(input('Enter your age (over 20): '))
+
+print(f'DEBUG: Using age {age}')
+&vellip;
+</code></pre>
+
+<div class="page-number">88</div>
+<pre><code class="language-python line-numbers">
+"""
+This module plays an interactive game. A user must guess a number.
+"""
+
+# Generate a random number between 1 and 100, inclusive
+number = random.randint(1, 100)
+
+print("A number between 1 and 100 has been chosen. Guess it!")
+
+# Get the first guess
+guess = int(input('Enter your first guess: '))
+tally = 1     # accumulator
+
+while guess != number:
+    # Determine if the guess is too low or too high
+    if guess &lt; number:
+        print('Too LOW')
+    else:
+        print('Too HIGH')
+
+    # Get another guess and bump up the tally
+    guess = int(input('Enter another guess: '))
+    tally += 1
+
+print(f'Congratulations! You needed {tally} guesses.')
+</code></pre>
+
+<div class="page-number">89</div>
+<pre><code class="language-python line-numbers">
+# Print each item in a list on a separate line
+for item in lst:
+    print(item)
+</code></pre>
+
+<div class="page-number">89</div>
+<pre><code class="language-python line-numbers">
+# Prompt a user for a number n and then read that many input values
+n = int(input('Enter a positive integer: '))
+inputs = []    # accumulator
+for i in range(n):
+    inputs.append(int(input('Enter a number: ')))
+</code></pre>
+
+<div class="page-number">89</div>
+<pre><code class="language-python line-numbers">
+# Convert each item in lst to a string 
+for i in range(len(lst)):
+    lst[i] = str(lst[i])
+</code></pre>
+
+<div class="page-number">89</div>
+<pre><code class="language-python line-numbers">
+def collatz(n):
+    """
+    Return the collatz sequence for n in a list
+    Args:
+        
+        n (int): a positive integer
+
+    Returns:
+        a list containing numbers in the sequence starting with n
+    """
+    # TODO
+</code></pre>
+
+<div class="page-number">90</div>
+<pre><code class="language-python line-numbers">
+def is_sorted1(lst):
+    """Return True if the values in a list are sorted, False otherwise"""
+
+    result = True
+    for i in range(1, len(lst)):
+        if lst[i] &lt; lst[i - 1]:
+            result = False
+    return result
+</code></pre>
+
+<div class="page-number">90</div>
+<pre><code class="language-python line-numbers">
+def is_sorted2(lst):
+    """Return True if the values in a list are sorted, False otherwise"""
+
+    i = 1
+    while i &lt; len(lst) and lst[i - 1] &lt;= lst[i]:
+        i += 1
+    return i == len(lst)
+</code></pre>
+
+<div class="page-number">91</div>
+<pre><code class="language-python line-numbers">
+def spam(filename):
+    """
+    Open and then close a file.
+    Args:
+        filename (str): the name of the file to open
+    """
+    input_file = open(filename, 'r')
+    print(f'The file named {filename} is now open for reading.')
+    input_file.close()
+</code></pre>
+
+<div class="page-number">92</div>
+<pre><code class="language-python line-numbers">
+def spam(filename):
+    """Open and then close a file with a given name."""
+    with open(filename, 'r') as input_file:
+        print(f'The file named {filename} is now open for reading.')
+</code></pre>
+
+<div class="page-number">92</div>
+<pre><code class="language-python line-numbers">
+def wc(filename):
+    """
+    Determine the number of lines and characters in a text file.
+    
+    Args:
+        filename (str): the name of the file to display
+        
+    Returns:
+        (lines, chars): the number of lines and characters in a text file
+    """
+     # Open the file for reading
+    input_file = open(filename, 'r')
+    
+    # Read the file contents into a string and close the file
+    file_contents = input_file.read()
+    input_file.close()
+    
+    # Count the number of characters and the number of lines
+    char_count = len(file_contents)
+    line_count = len(file_contents.split('\n'))
+    
+    return char_count, line_count
+</code></pre>
+
+<div class="page-number">93</div>
+<pre><code class="language-python line-numbers">
+input_file = open('testdata.txt', 'r')
+lines = input_file.readlines()
+input_file.close()
+print(f'This file contains {len(input_file)} lines.')
+print(f'lines = {lines}')
+</code></pre>
+
+
+<div class="page-number">93</div>
+<pre><code class="language-python line-numbers">
+def wc(filename):
+    """
+    Determine the number of lines and characters in a text file.
+
+    Args:
+        filename (str): the name of the file to display
+
+    Returns:
+        (lines, chars): the number of lines and characters in a text file
+    """
+    # Open the file for reading
+    input_file = open(filename, 'r')
+
+     # Read the file contents into a string and close the file
+    lines = input_file.readlines()
+    input_file.close()
+
+    # Count the number of characters and the number of lines
+    char_count = 0  # accumulator
+    for line in lines:
+        char_count += len(line)
+    line_count = len(lines)
+
+    return char_count, line_count
+</code></pre>
+
+<div class="page-number">94</div>
+<pre><code class="language-python line-numbers">
+def wc(filename):
+    """
+    Determine the number of lines and characters in a text file.
+
+    Args:
+        filename (str): the name of the file to display
+
+    Returns:
+        (lines, chars): the number of lines and characters in a text file
+    """
+    # Open the file for reading
+    input_file = open(filename, 'r')
+
+    # Process text in the file one line at a time
+    char_count = 0  # accumulator
+    line_count = 0  # accumulator
+    line = input_file.readline()        # read the first line
+    while line != '':
+        char_count += len(line)
+        line_count += 1
+
+        line = input_file.readline()    # read another line
+
+    input_file.close()
+
+    return char_count, line_count
+</code></pre>
+
+<div class="page-number">95</div>
+<pre><code class="language-python line-numbers">
+with open('datafile.txt') as input_file:
+    first_line = input_file.readline().strip()
+    number = int(first_line)
+    data = input_file.read()
+</code></pre>
+
+<div class="page-number">95</div>
+<pre><code class="language-python line-numbers">
+def wc(filename):
+    """
+    Determine the number of lines and characters in a text file.
+
+    Args:
+        filename (str): the name of the file to display
+
+    Returns:
+        (lines, chars): the number of lines and characters in a text file
+    """
+    # Open the file for reading
+    input_file = open(filename, 'r')
+
+    # Read the file contents into a string
+    char_count = 0  # accumulator
+    line_count = 0  # accumulator
+    for line in input_file:
+        char_count += len(line)
+        line_count += 1
+
+    input_file.close()
+    
+    return char_count, line_count
+</code></pre>
+
+<div class="page-number">95</div>
+<pre><code class="language-python line-numbers">
+output_filename = 'testdata.txt'
+output_file = open(output_filename, 'w')
+print('spam', file=output_file)
+print('ham', file=output_file)
+print('eggs', file=output_file, end='')
+output_file.close()
+</code></pre>
+
+<div class="page-number">96</div>
+<pre><code class="language-python line-numbers">
+output_filename = 'testdata.txt'
+output_file = open(output_filename, 'w')
+print('spam\nham\neggs', file=output_file, end='')
+output_file.close()
+</code></pre>
+
+<div class="page-number">96</div>
+<pre><code class="language-python line-numbers">
+output_filename = 'testdata.txt'
+output_file = open(output_filename, 'w')
+output_file.write('spam\nham\neggs')
+output_file.close()
+</code></pre>
+
+<div class="page-number">96</div>
+<pre><code class="language-python line-numbers">
+output_filename = 'testdata.txt'
+with open(output_filename, 'w') as output_file:
+    output_file.write('spam\nham\neggs')
+</code></pre>
+
+<div class="page-number">97</div>
+<pre><code class="language-python line-numbers">
+"""Report BMI values for data in a text file"""
+
+def bmi(height, weight):
+    """Compute the BMI for someone having a given height and weight"""
+    
+    return (703. * weight) / height ** 2
+
+def process_bmi_data(filename):
+    """
+    Print the ID number and computed BMI for each line in a data file.
+    Args:
+        filename (str): the name of the file.
+    """
+    # TODO: Replace this comment with your code
+
+def main():
+    """Get the name of a BMI data file and process it."""
+
+    data_filename = input('Enter the file name: ').strip()
+    process_bmi_data(data_filename)
+
+main()
+</code></pre>
+
+<div class="page-number">97</div>
+<pre><code class="language-python line-numbers">
+def copy_file(src_filename, tgt_filename):
+    """
+    Copy the contents of one file to another. If the target file
+    already exists, it is replaced by the copy.
+    
+    Args:
+     src_filename (str): the name of the source file
+     tgt_filename (str): the name of the target file
+    """
+    source_file = open(src_filename, 'r')
+    target_file = open(tgt_filename, 'w')
+    source_data = source_file.read()
+    target_file.write(source_data)
+    source_file.close()
+    target_file.close()
+</code></pre>
+
+<div class="page-number">99</div>
+<pre><code class="language-python line-numbers">
+textspeak = {'LOL': 'laughing out loud',
+             'TMI': 'too much information',
+             'BRB': 'be right back'}
+</code></pre>
+
+<div class="page-number">99</div>
+<pre><code class="language-python line-numbers">
+phone_numbers = {'Susan': '(864) 555-1234', 'Aaron': '(502) 555-8765'} 
+</code></pre>
+
+<div class="page-number">100</div>
+<pre><code class="language-python line-numbers">
+	{2 ** i for i in range(16)}
+</code></pre>
+
+<div class="page-number">101</div>
+<pre><code class="language-python line-numbers">
+import string
+
+with open('foo.txt') as text_file:
+    text = text_file.read()
+
+chars_set = set(text)
+print('Here are the unique characters in the file:', chars_set)
+print(f'The file contains {len(chars_set)} unique characters')
+
+punctuation_chars_set = set(string.punctuation)
+chars_no_punctuation_set = chars_set - punctuation_chars_set  # set difference
+n = len(chars_no_punctuation_set)
+print(f'The file contains {n} unique non-punctuation characters'.)
+</code></pre>
+
+<div class="page-number">101</div>
+<pre><code class="language-python line-numbers">
+def unique_items(lst):
+    """
+    Determine if a list contains only distinct items.
+    Args:
+        lst (list): a list of objects
+
+    Returns:
+        True if all of the items in lst are unique, False otherwise
+    """
+    # TODO
+</code></pre>
+
+<div class="page-number">102</div>
+<pre><code class="language-python line-numbers">
+def word_count(words):
+    """
+    Determine the number of occurrences for each word in a list.
+    Args:
+        words (list): a list of words (strings)
+
+    Returns:
+        a dictionary whose keys are words from the list and whose values
+        are the number of occurrences of each word. Example:
+
+        words = ['Paris', 'in', 'the',
+                'the', 'spring']
+        word_count(words) --&gt; {'in': 1, 'spring': 1, 'the': 2, 'Paris': 1}
+    """
+    # TO DO: Replace this comment with your code.
+</code></pre>
+
+<div class="page-number">102</div>
+<pre><code class="language-python line-numbers">
+def find_bad_words(words, good_words):
+    """
+    Return a set containing the items in words that are not acceptable.
+    Args:
+        words (list): a list of words
+        good_words (list): a list of acceptable words
+
+    Returns:
+        a set of values in words that are not also in good_words.
+        Example:
+            find_bad_words(['apple', 'yoyo', 'peach', 'top'],
+                           ['apple', 'cherry', 'peach', 'plum']) --&gt;
+                {'top', 'yoyo'}
+    """
+    # TO DO: Replace this comment with your code.
+</code></pre>
+
+<div class="page-number">103</div>
+<pre><code class="language-python line-numbers">
+ACE = 1
+JACK = 11
+QUEEN = 12
+KING = 13
+
+CLUBS = 'c'
+DIAMONDS = 'd'
+HEARTS = 'h'
+SPADES = 's'
+
+FACE_UP = True
+FACE_DOWN = False
+
+RANKS = (ACE, 2, 3, 4, 5, 6, 7, 8, 9, 10, JACK, QUEEN, KING)
+SUITS = (CLUBS, DIAMONDS, HEARTS, SPADES)
+
+# A card is represented as a list: [rank, suit, face up/down]
+</code></pre>
+
+<div class="page-number">104</div>
+<pre><code class="language-python line-numbers">
+def make_card(rank, suit, is_face_up):
+    """Create a new card with the given attributes """
+    return [rank, suit, is_face_up]
+
+def get_rank(card):
+    """Return the rank of this card """
+    return card[0]
+
+def get_suit(card):
+    """Return the suit of this card"""
+    return card[1]
+
+def is_face_up(card):
+    """Return True if this card is face up, False otherwise"""
+    return card[2]
+
+def flip(card):
+    """Change a card from face up to face down or from face down to face up"""
+    card[2] = not card[2]
+
+def get_string(card):
+    """
+    Return a string representation for this card. Examples:
+        - get_string([JACK, DIAMONDS, True]) -&gt; ' JD'
+        - get_string([JACK, DIAMONDS, False]) -&gt; '###'
+    """
+    if not is_face_up(card):
+        return '###'
+    rank_names = (' A', ' 1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8',
+                  ' 9', '10', ' J', ' Q', ' K')
+    return f'{rank_names[get_rank(card)]}{get_suit(card).upper()}'
+</code></pre>
+
+<div class="page-number">106</div>
+<pre><code class="language-python line-numbers">
+class Card:
+    """A card object represents a card in a standard deck of playing cards."""
+
+    def __init__(self, rank, suit, is_face_up):
+        """
+        Initialize a card to have the given rank and suit, and to
+        be either face up or face down.
+
+        Args:
+            rank (int): this card's rank -- rank in RANKS
+            suit (str): this card's suit -- suit in SUITS
+            is_face_up (bool): True if this card is face up, False if face down
+        """
+        self._rank = rank
+        self._suit = suit
+        self._is_face_up = is_face_up
+
+    def flip(self):
+        """ Change this card from face up to face down or vice versa."""
+        self._is_face_up = not self._is_face_up
+
+    def is_face_up(self):
+        """Return True if this card is face up, False if face down"""
+        return self._is_face_up
+
+    def get_rank(self):
+        """
+        Return the rank of this card--one of RANKS."""
+        return self._rank
+
+    def get_suit(self):
+        """Return the suit of this card--one of SUITS"""
+        return self._suit
+
+    def __str__(self):
+        """Returns a string representation for this card."""
+        
+        if not self.is_face_up():
+            return '###'
+        rank_names = (' A', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8',
+                      ' 9', '10', ' J', ' Q', ' K')
+        return f'{rank_names[self.get_rank() - 1]}{self.get_suit().upper()}'
+</code></pre>
+
+<div class="page-number">107</div>
+<pre><code class="language-python line-numbers">
+import random
+
+rank = random.choice(RANKS)
+suit = random.choice(SUITS)
+status = random.choice((False, True))
+card = Card(rank, suit, status)
+if not card.is_face_up():
+    card.flip()
+print('The card selected is', card)
+</code></pre>
+
+<div class="page-number">108</div>
+<pre data-start="4"><code class="language-python line-numbers no-whitespace-normalization">    def __init__(self, rank, suit, is_face_up):
+        """
+        Initialize a card to have the given rank and suit, and to
+        be either face up or face down
+
+        Args:
+            rank (int): this card's rank -- rank in RANKS
+            suit (str): this card's suit -- suit in SUITS
+            is_face_up (bool): True if this card is face up, False if face down
+        """
+        self._rank = rank
+        self._suit = suit
+        self._is_face_up = is_face_up</code></pre>
+
+<div class="page-number">109</div>
+<pre data-start="31"><code class="language-python line-numbers no-whitespace-normalization">    def get_suit(self):
+        """Return the suit of this card--one of SUITS"""
+        return self._suit</code></pre>
+
+<div class="page-number">109</div>
+<pre data-start="18"><code class="language-python line-numbers no-whitespace-normalization">    def flip(self):
+        """ Change this card from face up to face down or vice versa."""
+        self._is_face_up = not self._is_face_up</code></pre>
+
+
+<div class="page-number">110</div>
+<pre data-start="35"><code class="language-python line-numbers no-whitespace-normalization">    def __str__(self):
+        """Returns a string representation for this card."""
+        
+        if not self.is_face_up():
+            return '###'
+        rank_names = (' A', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8',
+                      ' 9', '10', ' J', ' Q', ' K')
+        return f'{rank_names[self.get_rank() - 1]}{self.get_suit().upper()}'</code></pre>
+
+
+<div class="page-number">111</div>
+<pre><code class="language-python line-numbers">
+import random
+
+class CardDeck:
+    """ A deck of 52 playing cards"""
+
+    def __init__(self):
+        """Initialize a deck of 52 playing cards, all face down"""
+        self._cards = []
+        for suit in SUITS:
+            for rank in RANKS:
+                self._cards.append(Card(rank, suit, FACE_DOWN))
+
+    def shuffle(self):
+        """Randomly rearrange the cards in this deck"""
+        random.shuffle(self._cards)
+
+    def draw(self):
+        """
+        Draw the top card on this deck, which cannot be empty
+
+        Returns:
+            the top card on this deck after removing the card
+        """
+        # The top card is the one at the end of the list
+        return self._cards.pop()
+
+    def is_empty(self):
+        """
+        Is this deck empty?
+
+        Returns:
+            True if this deck is empty, False otherwise
+        """
+        return len(self._cards) == 0
+</code></pre>
+
+<div class="page-number">112</div>
+<pre><code class="language-python line-numbers no-whitespace-normalization">    def __init__(self):
+        """Initialize a deck of 52 playing cards, all face down"""
+        self._cards = [Card(r, s, FACE_DOWN) for s in SUITS for r in RANKS]</code></pre>
+
+<div class="page-number">112</div>
+<pre><code class="language-python line-numbers">
+class CubeDie:
+    """A six-sided die object."""
+
+    def __init__(self):
+        """Construct a new instance with 1 on the top."""
+        # TODO
+
+    def get_top(self):
+        """Return the number (1, 2, 3, 4, 5, or 6) on the top side."""
+        # TODO
+
+    def roll(self):
+        """Randomly change the number on the top side."""
+        # TODO
+
+    def __str__(self):
+        """Return a string showing the top--e.g., [4] or [5]."""
+</code></pre>
+
+<div class="page-number">113</div>
+<pre><code class="language-python line-numbers">
+"""A program to test the implementation of the class games.CubeDie."""
+
+import games
+
+def main():
+    # TODO
+
+main()
+</code></pre>
+
+
+
+<!--   <script src="js/clipboard.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="js/prism.js"></script>
+<!-- 	<script src="https://cdnjs.com/prism@v1.x/components/prism-core.min.js"></script> -->
+<!-- 	<script src="https://cdnjs.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script> -->
+  <script>
+    // https://stackoverflow.com/questions/36303869/how-to-use-document-evaluate-and-xpath-to-get-a-list-of-elements
+  function getElementsByXPath(xpath, parent) {
+      // Find all the elements matching the xpath given
+      let results = [];
+      let query = document.evaluate(xpath, parent || document,
+          null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+      for (let i = 0, length = query.snapshotLength; i < length; ++i) {
+          results.push(query.snapshotItem(i));
+      }
+      return results;
+  }
+  
+  function remove_filter() {
+    // Clear the filter by Unhiding all hidden elements
+    Array.from(document.getElementsByClassName("hidden")).forEach(function(elt) {
+      elt.classList.remove("hidden");
+      });
+    document.getElementById("clear-filter-button").setAttribute("disabled", "disabled");
+  }
+  
+  function filterByPageNumber(e) {
+    // Process an input event in the filter text box
+    let pageNumber = document.getElementById("page-number").value.trim();
+    if (pageNumber == "") {
+      remove_filter();
+    }
+    else {
+      document.getElementById("clear-filter-button").removeAttribute("disabled");
+      
+      // Hide all that don't match, unhide all that match"
+      let selected_items = getElementsByXPath("//*/div[text()=" + pageNumber + "]");
+      selected_items.forEach(function(elt) {
+        elt.classList.remove('hidden');
+        elt.nextElementSibling.classList.remove('hidden')
+      })
+      
+      let deselected_items = getElementsByXPath("//*/div[text()!=" + pageNumber + "]");
+      deselected_items.forEach(function(elt) {
+        elt.classList.add('hidden');
+        elt.nextElementSibling.classList.add('hidden')
+      })
+    }
+
+  }
+  
+  // Watch for a page number entered as a filter
+  document.getElementById("page-number").addEventListener("input", filterByPageNumber);
+  document.getElementById("clear-filter-button").addEventListener("click", function(evt) {
+    document.getElementById("page-number").value = "";
+    remove_filter();
+  });
+  
+  </script>
+</body>
+</html>
